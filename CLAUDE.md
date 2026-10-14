@@ -52,7 +52,7 @@ All of Victoria from the two bases. Named towns: Mornington, Shepparton, Geelong
 - `404.html`, `robots.txt`, `sitemap.xml`
 
 ## Assets
-- `assets/logo/` - empty. Ours to design.
+- `assets/logo/jb-mark.svg` - our JB monogram (amber tile, three road dashes). Also copied to `/favicon.svg`
 - `assets/hero/hero-night-*` - **the homepage hero**, James's painted night scene (truck on a country highway under a crescent moon). `hero-night-source.jpeg` is the original; 1400/2400 webp+jpg are what the page loads
 - `assets/hero/hero-road-source.jpeg` - the daytime version of the same painting, not used (kept in case a light page wants it)
 - `assets/hero/ai-fleet-collage-source.png` - Jesse's AI truck collage from 2026-10-14. Not used on the page
