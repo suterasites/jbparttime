@@ -1,0 +1,4 @@
+# Pre-launch: keep the site out of the index until Jesse signs off and DNS points here.
+# At launch, replace with: User-agent: *  /  Allow: /  /  Sitemap: https://jbparttime.com/sitemap.xml
+User-agent: *
+Disallow: /
