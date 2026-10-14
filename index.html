@@ -24,7 +24,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
   <script type="application/ld+json">
@@ -145,7 +145,7 @@
       <li><a href="#faq">FAQs</a></li>
       <li><a href="#quote">Get a quote</a></li>
     </ul>
-    <a href="tel:+61468772402" class="btn btn--accent btn--lg mobile-nav__call">Call 0468 772 402</a>
+    <a href="tel:+61468772402" class="btn btn--butter mobile-nav__call">Call 0468 772 402</a>
   </div>
 </header>
 
@@ -195,9 +195,9 @@
         <rect x="30" y="8" width="60" height="28" fill="none" class="b-ink-s" stroke-width="2"/>
         <rect x="9" y="36" width="102" height="30" fill="none" class="b-ink-s" stroke-width="2"/>
         <rect x="22" y="66" width="76" height="30" fill="none" class="b-ink-s" stroke-width="2"/>
-        <text class="b-num" x="60" y="31" font-size="24" text-anchor="middle">25</text>
-        <text class="b-num" x="60" y="60" font-size="22" text-anchor="middle">VEHICLES</text>
-        <text class="b-num" x="60" y="89" font-size="20" text-anchor="middle">12 COLD</text></svg>
+        <text class="b-num" x="60" y="30" font-size="21" text-anchor="middle">25</text>
+        <text class="b-num" x="60" y="57" font-size="14" text-anchor="middle" textLength="84">VEHICLES</text>
+        <text class="b-num" x="60" y="86" font-size="14" text-anchor="middle" textLength="62">12 COLD</text></svg>
     </li>
     <li style="--r:-5deg">
       <svg viewBox="0 0 120 120"><defs><path id="bp5" d="M60 60m-41 0a41 41 0 1 1 82 0a41 41 0 1 1-82 0"/></defs>
@@ -209,7 +209,7 @@
 </section>
 
 <!-- ============ STATS ============ -->
-<section class="stats" aria-label="JB Parttime at a glance">
+<section class="band band--night stats stars" aria-label="JB Parttime at a glance">
   <div class="container stats__grid">
     <div class="stat">
       <span class="stat__num" data-count="2008" data-from="1990">2008</span>
@@ -225,73 +225,66 @@
     </div>
     <div class="stat">
       <span class="stat__num" data-count="2">2</span>
-      <span class="stat__label">Bases, Hillside and Colac</span>
+      <span class="stat__label">Bases, Hillside &amp; Colac</span>
     </div>
   </div>
 </section>
 
 <!-- ============ SERVICES ============ -->
-<section class="section" id="services" aria-labelledby="services-title">
+<section class="band band--cream" id="services" aria-labelledby="services-title">
   <div class="container section__inner">
     <div class="section-head section-head--row">
       <div>
         <p class="eyebrow">What we carry</p>
-        <h2 id="services-title">Four services. One crew that knows the roads.</h2>
+        <h2 id="services-title">Four services, <em>one crew</em> that knows the roads.</h2>
       </div>
       <p class="lead">Scheduled contract runs are the bulk of the work, and the same trucks take on one-off freight and courier jobs in between.</p>
     </div>
 
-    <ol class="service-rows">
-      <li class="service-row reveal">
-        <span class="service-row__num">01</span>
-        <div class="service-row__body">
-          <h3>Bakery overnight delivery</h3>
+    <div class="services">
+      <article class="service service--feature stars reveal">
+        <div class="service__body">
+          <p class="service__no">No. 01 &middot; The main run</p>
+          <h3>Bakery overnight <em>delivery</em></h3>
           <p>Scheduled overnight runs for bakeries and bread manufacturers. Loaded after the bake and delivered to stores, cafes and distribution points ahead of the morning trade.</p>
+          <a href="#quote" class="btn btn--butter" data-service="Bakery overnight delivery">Quote a bakery run <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <a href="#quote" class="service-row__link" data-service="Bakery overnight delivery">Quote a bakery run
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </li>
-      <li class="service-row reveal">
-        <span class="service-row__num">02</span>
-        <div class="service-row__body">
-          <h3>Cold transport</h3>
-          <p>Refrigerated trucks for dairy, meat, produce and other chilled goods, with the temperature held from pickup to drop-off.</p>
+        <div class="service__sticker" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="bp6" d="M60 60m-41 0a41 41 0 1 1 82 0a41 41 0 1 1-82 0"/></defs>
+            <circle cx="60" cy="60" r="57" fill="#F3E3A2"/><circle cx="60" cy="60" r="52" fill="none" class="b-ink-s" stroke-width="1.6"/><circle cx="60" cy="60" r="30" fill="none" class="b-ink-s" stroke-width="1.2"/>
+            <text class="b-cap" font-size="10.5"><textPath href="#bp6" textLength="250">FRESH &#183; OVERNIGHT &#183; EVERY RUN &#183;</textPath></text>
+            <text class="b-serif b-it" x="60" y="68" font-size="22" text-anchor="middle">bread</text></svg>
         </div>
-        <a href="#quote" class="service-row__link" data-service="Cold transport">Quote cold transport
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </li>
-      <li class="service-row reveal">
-        <span class="service-row__num">03</span>
-        <div class="service-row__body">
-          <h3>Freight delivery</h3>
-          <p>Regular freight routes and one-off loads for businesses right across Victoria, metro and regional.</p>
-        </div>
-        <a href="#quote" class="service-row__link" data-service="Freight delivery">Quote a freight job
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </li>
-      <li class="service-row reveal">
-        <span class="service-row__num">04</span>
-        <div class="service-row__body">
-          <h3>General courier</h3>
-          <p>Parcels and smaller consignments, picked up and delivered by the same team that runs the overnight routes.</p>
-        </div>
-        <a href="#quote" class="service-row__link" data-service="General courier">Quote a courier job
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </li>
-    </ol>
+      </article>
+
+      <article class="service reveal">
+        <p class="service__no">No. 02</p>
+        <h3>Cold <em>transport</em></h3>
+        <p>Refrigerated trucks for dairy, meat, produce and other chilled goods, with the temperature held from pickup to drop-off.</p>
+        <a href="#quote" class="pill-link" data-service="Cold transport">Quote cold transport <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="service reveal">
+        <p class="service__no">No. 03</p>
+        <h3>Freight <em>delivery</em></h3>
+        <p>Regular freight routes and one-off loads for businesses right across Victoria, metro and regional.</p>
+        <a href="#quote" class="pill-link" data-service="Freight delivery">Quote a freight job <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="service reveal">
+        <p class="service__no">No. 04</p>
+        <h3>General <em>courier</em></h3>
+        <p>Parcels and smaller consignments, picked up and delivered by the same team that runs the overnight routes.</p>
+        <a href="#quote" class="pill-link" data-service="General courier">Quote a courier job <span aria-hidden="true">&rarr;</span></a>
+      </article>
+    </div>
   </div>
 </section>
 
 <!-- ============ THE OVERNIGHT RUN (departure board) ============ -->
-<section class="section section--dark" id="run" aria-labelledby="run-title">
+<section class="band band--night stars" id="run" aria-labelledby="run-title">
   <div class="container section__inner">
-    <div class="section-head">
+    <div class="section-head section-head--center">
       <p class="eyebrow">The overnight run</p>
-      <h2 id="run-title">Your bread leaves the oven. We take it from there.</h2>
+      <h2 id="run-title">Your bread leaves the oven. <em>We take it from there.</em></h2>
       <p class="lead">How a bakery run works, start to finish.</p>
     </div>
 
@@ -301,7 +294,6 @@
         <span role="columnheader">What happens</span>
         <span role="columnheader" class="board__status-h">Status</span>
       </div>
-
       <div class="board__row reveal" role="row">
         <span class="board__stage" role="cell"><b>01</b> Evening</span>
         <span class="board__what" role="cell"><strong>Loaded at the bakery</strong> Bread, rolls and pastry racked into the truck as the ovens finish.</span>
@@ -327,50 +319,46 @@
 </section>
 
 <!-- ============ WHY ============ -->
-<section class="section section--deep" id="why" aria-labelledby="why-title">
+<section class="band band--khaki" id="why" aria-labelledby="why-title">
   <div class="container section__inner why">
-    <div class="why__visual reveal" aria-hidden="true">
+    <div class="why__visual stars reveal" aria-hidden="true">
       <svg class="route" viewBox="0 0 400 320" fill="none">
-        <defs>
-          <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="currentColor" opacity=".18"/></pattern>
-        </defs>
-        <rect width="400" height="320" fill="url(#dots)"/>
-        <path class="route__line" d="M300 96 C 250 120, 210 150, 170 190 S 110 240, 92 236" stroke-width="2.5" stroke-dasharray="7 8" stroke-linecap="round"/>
-        <path class="route__line route__line--soft" d="M300 96 C 330 80, 350 70, 372 40" stroke-width="2" stroke-dasharray="4 8" stroke-linecap="round"/>
-        <path class="route__line route__line--soft" d="M300 96 C 320 130, 336 170, 350 220" stroke-width="2" stroke-dasharray="4 8" stroke-linecap="round"/>
-        <path class="route__line route__line--soft" d="M92 236 C 70 236, 48 224, 26 214" stroke-width="2" stroke-dasharray="4 8" stroke-linecap="round"/>
-        <circle class="route__node" cx="300" cy="96" r="9"/>
-        <circle class="route__ring" cx="300" cy="96" r="18"/>
-        <circle class="route__node" cx="92" cy="236" r="9"/>
-        <circle class="route__ring" cx="92" cy="236" r="18"/>
-        <text class="route__label" x="278" y="74" text-anchor="end">HILLSIDE</text>
-        <text class="route__sub" x="278" y="46" text-anchor="end">Melbourne</text>
-        <text class="route__label" x="58" y="276">COLAC</text>
-        <text class="route__sub" x="58" y="292">Western Vic</text>
+        <path class="route__moon" d="M352 30a22 22 0 1 0 22 30a17 17 0 1 1-22-30z"/>
+        <path class="route__line" d="M300 110 C 250 134, 210 160, 170 196 S 110 244, 92 240" stroke-width="2.5" stroke-dasharray="7 8" stroke-linecap="round"/>
+        <path class="route__line route__line--soft" d="M300 110 C 320 140, 336 176, 350 226" stroke-width="2" stroke-dasharray="4 8" stroke-linecap="round"/>
+        <path class="route__line route__line--soft" d="M92 240 C 70 240, 48 228, 26 218" stroke-width="2" stroke-dasharray="4 8" stroke-linecap="round"/>
+        <circle class="route__ring" cx="300" cy="110" r="18"/>
+        <circle class="route__node" cx="300" cy="110" r="9"/>
+        <circle class="route__ring" cx="92" cy="240" r="18"/>
+        <circle class="route__node" cx="92" cy="240" r="9"/>
+        <text class="route__label" x="284" y="96" text-anchor="end">Hillside</text>
+        <text class="route__sub" x="283" y="64" text-anchor="end">MELBOURNE</text>
+        <text class="route__label" x="58" y="282">Colac</text>
+        <text class="route__sub" x="59" y="300">WESTERN VIC</text>
       </svg>
     </div>
 
     <div class="why__copy">
       <p class="eyebrow">Why JB Parttime</p>
-      <h2 id="why-title">On the overnight run since 2008.</h2>
-      <p class="lead">A bakery contract lives or dies on the truck turning up every night. That is the only job we have been doing for the last eighteen years.</p>
+      <h2 id="why-title">On the overnight run <em>since 2008.</em></h2>
+      <p class="lead">A bakery contract lives or dies on the truck turning up every night. That is the job we have been doing for the last eighteen years.</p>
 
       <ul class="why__list">
         <li class="reveal">
-          <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
           <div><h3>Insured end to end</h3><p>Goods in transit and marine cargo cover on every load, plus WorkCover.</p></div>
         </li>
         <li class="reveal">
-          <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.5a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z"/></svg></span>
+          <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.5a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z"/></svg></span>
           <div><h3>Refrigerated where it counts</h3><p>12 of our 25 vehicles carry refrigerated bodies, so chilled and fresh lines never ride warm.</p></div>
         </li>
         <li class="reveal">
-          <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
           <div><h3>Two bases, less dead running</h3><p>Hillside covers Melbourne and the north. Colac covers the west and the coast. Regional runs start close to where they are going.</p></div>
         </li>
         <li class="reveal">
           <!-- Jesse says "food safe accredited": confirm the scheme name before stating it as a certification -->
-          <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18M5 11V7a7 7 0 0 1 14 0v4M4 11l1.5 9h13L20 11"/></svg></span>
+          <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18M5 11V7a7 7 0 0 1 14 0v4M4 11l1.5 9h13L20 11"/></svg></span>
           <div><h3>Food-safe handling</h3><p>Clean, food-grade bodies and drivers who handle bread, dairy and fresh produce every night of the week.</p></div>
         </li>
       </ul>
@@ -379,25 +367,31 @@
 </section>
 
 <!-- ============ AREAS ============ -->
-<section class="section" id="areas" aria-labelledby="areas-title">
+<section class="band band--cream" id="areas" aria-labelledby="areas-title">
   <div class="container section__inner">
-    <div class="section-head">
+    <div class="section-head section-head--center areas__head">
       <p class="eyebrow">Where we run</p>
-      <h2 id="areas-title">All of Victoria, from two bases.</h2>
+      <h2 id="areas-title">All of Victoria, <em>from two bases.</em></h2>
       <p class="lead">Metro Melbourne, the coast, the west and the north. If it is in Victoria, we can run it.</p>
+      <div class="areas__sticker" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><defs><path id="bp7" d="M60 60m-41 0a41 41 0 1 1 82 0a41 41 0 1 1-82 0"/></defs>
+          <circle cx="60" cy="60" r="57" fill="#0A1220"/><circle cx="60" cy="60" r="52" fill="none" stroke="#F0A23B" stroke-width="1.2" stroke-opacity=".6"/>
+          <text class="b-cap b-amber" font-size="10.5"><textPath href="#bp7" textLength="250">VIC WIDE &#183; HILLSIDE &#183; COLAC &#183;</textPath></text>
+          <text class="b-serif b-amber" x="60" y="72" font-size="32" text-anchor="middle">JB</text></svg>
+      </div>
     </div>
 
     <div class="bases">
       <article class="base reveal">
         <p class="base__tag">Base 01</p>
         <h3>Hillside</h3>
-        <p>26 Boronia Drive, Hillside VIC 3037</p>
+        <p class="base__addr">26 Boronia Drive, Hillside VIC 3037</p>
         <p class="base__note">Melbourne metro, Mornington Peninsula, Geelong and the north to Shepparton.</p>
       </article>
       <article class="base reveal">
         <p class="base__tag">Base 02</p>
         <h3>Colac</h3>
-        <p>5 Dennis Street, Colac VIC 3250</p>
+        <p class="base__addr">5 Dennis Street, Colac VIC 3250</p>
         <p class="base__note">The Western District, the Great Ocean Road and west to Warrnambool and Casterton.</p>
       </article>
     </div>
@@ -410,17 +404,17 @@
       <li>Warrnambool</li>
       <li>Casterton</li>
       <li>Shepparton</li>
-      <li class="towns__more">and everywhere in between</li>
+      <li class="towns__more">&amp; everywhere in between</li>
     </ul>
   </div>
 </section>
 
 <!-- ============ FAQ ============ -->
-<section class="section section--deep" id="faq" aria-labelledby="faq-title">
+<section class="band band--sage" id="faq" aria-labelledby="faq-title">
   <div class="container section__inner faq">
     <div class="section-head">
       <p class="eyebrow">Questions</p>
-      <h2 id="faq-title">Before you send a quote.</h2>
+      <h2 id="faq-title">Before you <em>send a quote.</em></h2>
       <p class="lead">Anything not covered here, call Jesse on <a href="tel:+61468772402">0468 772 402</a>.</p>
     </div>
     <div class="faq__list">
@@ -453,29 +447,35 @@
 </section>
 
 <!-- ============ CTA BAND ============ -->
-<section class="cta-band" aria-labelledby="cta-title">
+<section class="band band--butter cta-band" aria-labelledby="cta-title">
   <div class="container cta-band__inner">
-    <h2 id="cta-title">Got a run that needs a reliable carrier?</h2>
+    <div class="cta-band__sticker" aria-hidden="true">
+      <svg viewBox="0 0 120 90"><rect x="2" y="2" width="116" height="86" rx="7" fill="#DCD3A9"/><rect x="7" y="7" width="106" height="76" rx="4" fill="none" class="b-ink-s" stroke-width="1.4"/><line x1="7" y1="64" x2="113" y2="64" class="b-ink-s" stroke-width="1.2"/>
+        <text class="b-serif b-it" x="60" y="34" font-size="23" text-anchor="middle">overnight</text>
+        <text class="b-serif b-it" x="60" y="55" font-size="20" text-anchor="middle">bakery runs</text>
+        <text class="b-cap" x="60" y="77" font-size="7.5" text-anchor="middle" letter-spacing="2">HILLSIDE &#183; COLAC</text></svg>
+    </div>
+    <h2 id="cta-title">Got a run that needs a <em>reliable carrier?</em></h2>
     <div class="cta-band__actions">
-      <a href="#quote" class="btn btn--ink btn--lg">Request a quote</a>
-      <a href="tel:+61468772402" class="btn btn--outline-ink btn--lg">0468 772 402</a>
+      <a href="#quote" class="btn btn--ink">Request a quote <span aria-hidden="true">&rarr;</span></a>
+      <a href="tel:+61468772402" class="btn btn--outline-ink">Call 0468 772 402</a>
     </div>
   </div>
 </section>
 
 <!-- ============ QUOTE ============ -->
-<section class="section section--dark" id="quote" aria-labelledby="quote-title">
+<section class="band band--night stars" id="quote" aria-labelledby="quote-title">
   <div class="container section__inner contact">
     <div class="contact__info">
       <p class="eyebrow">Request a quote</p>
-      <h2 id="quote-title">Tell us about the run.</h2>
+      <h2 id="quote-title">Tell us <em>about the run.</em></h2>
       <p class="lead">Where it starts, where it ends, how often, and whether it needs to stay cold. Jesse will come back to you with a price.</p>
 
       <dl class="contact__facts">
         <div><dt>Phone</dt><dd><a href="tel:+61468772402">0468 772 402</a></dd></div>
         <div><dt>Email</dt><dd><a href="mailto:jesseborg@jbparttime.com">jesseborg@jbparttime.com</a></dd></div>
         <div><dt>Office hours</dt><dd>Monday to Saturday, 9am to 5pm</dd></div>
-        <div><dt>Bases</dt><dd>Hillside VIC 3037<br />Colac VIC 3250</dd></div>
+        <div><dt>Bases</dt><dd>Hillside VIC 3037 &middot; Colac VIC 3250</dd></div>
       </dl>
     </div>
 
@@ -524,7 +524,7 @@
         <label><input type="radio" name="refrigerated" value="Not sure" /> Not sure</label>
       </fieldset>
       <div class="field"><label for="f-details">Anything else</label><textarea id="f-details" name="details" rows="4" placeholder="Volumes, drop times, number of stops"></textarea></div>
-      <button type="submit" class="btn btn--accent btn--lg quote-form__submit">Send my quote request</button>
+      <button type="submit" class="btn btn--butter quote-form__submit">Send my quote request</button>
     </form>
   </div>
 </section>
@@ -532,15 +532,15 @@
 </main>
 
 <!-- ============ FOOTER ============ -->
-<footer class="footer">
+<footer class="band band--khaki footer">
+  <div class="container footer__top">
+    <a href="/" class="footer__word" aria-label="JB Parttime, home">
+      <img src="assets/logo/jb-mark.svg" alt="" width="56" height="56" />
+      <span>JB Parttime</span>
+    </a>
+    <p class="footer__tag">Overnight bakery delivery, cold transport, freight and courier <em>across Victoria since 2008.</em></p>
+  </div>
   <div class="container footer__grid">
-    <div class="footer__brand">
-      <a href="/" class="brand" aria-label="JB Parttime, home">
-        <img src="assets/logo/jb-mark.svg" alt="" width="40" height="40" class="brand__mark" />
-        <span class="brand__word">JB Parttime<small>Transport</small></span>
-      </a>
-      <p>Overnight bakery delivery, cold transport, freight and courier across Victoria since 2008.</p>
-    </div>
     <div>
       <h3 class="footer__head">Services</h3>
       <ul>
@@ -565,16 +565,17 @@
         <li>5 Dennis Street, Colac VIC 3250</li>
       </ul>
     </div>
-  </div>
-  <div class="container footer__areas">
-    <span class="footer__head">Areas served</span>
-    <p>Melbourne, Hillside, Mornington Peninsula, Geelong, Colac, Warrnambool, Casterton, Shepparton and all of regional Victoria.</p>
+    <div>
+      <h3 class="footer__head">Areas served</h3>
+      <p>Melbourne, Mornington Peninsula, Geelong, Colac, Warrnambool, Casterton, Shepparton and all of regional Victoria.</p>
+    </div>
   </div>
   <div class="container footer__legal">
-    <p>&copy; <span id="year">2026</span> JB Parttime Pty Ltd. ABN 81 132 004 981.</p>
+    <p>&copy; <span id="year">2026</span> JB Parttime Pty Ltd &middot; ABN 81 132 004 981</p>
     <p>Website by <a href="https://suterasites.com.au" rel="noopener">Sutera Sites</a></p>
   </div>
 </footer>
+
 
 <script src="script.js" defer></script>
 </body>
