@@ -53,7 +53,9 @@ All of Victoria from the two bases. Named towns: Mornington, Shepparton, Geelong
 
 ## Assets
 - `assets/logo/` - empty. Ours to design.
-- `assets/hero/` - Jesse's AI-generated truck image goes here (attached to his 2026-10-14 email, not yet saved)
+- `assets/hero/hero-night-*` - **the homepage hero**, James's painted night scene (truck on a country highway under a crescent moon). `hero-night-source.jpeg` is the original; 1400/2400 webp+jpg are what the page loads
+- `assets/hero/hero-road-source.jpeg` - the daytime version of the same painting, not used (kept in case a light page wants it)
+- `assets/hero/ai-fleet-collage-source.png` - Jesse's AI truck collage from 2026-10-14. Not used on the page
 - `assets/fleet/` - for REAL fleet photos. None yet; ask after the mockup
 - `assets/services/` - service stills
 
@@ -63,6 +65,9 @@ All of Victoria from the two bases. Named towns: Mornington, Shepparton, Geelong
 - **Git remote:** not created. Will be `suterasites/JBParttime` via `scripts/deploy-mockup.py` (pass `--repo-name` if the trading name changes)
 - **Cloudflare Pages project:** not created. **The project name is permanent** - confirm the trading name before creating it
 - Link clean URLs from the start (`/about`, not `/about.html`)
+
+## Homepage hero (2026-10-14)
+Modelled on the Primal Pastures hero at James's request: khaki mono announcement bar, nav left / serif wordmark centred / round icon buttons right, centred Instrument Serif headline with one italic word over the painting, butter-yellow pill CTA, a right-hand column of sticker badges (desktop >=1180px only), and the stats band sliding up over the hero with rounded top corners. **Pills (999px) are allowed in the hero and header only** - the rest of the site keeps `--radius: 6px`. On mobile the CTA is pushed below the truck (`.hero .hero__ctas { margin-top: auto }`) so the button never covers it.
 
 ## Hard Rules - Client-Specific
 - **Never present the AI truck image as Jesse's fleet.** No "our fleet" caption, no fleet gallery built from it. Background/texture only. Buyers of a $1m contract judge whether the trucks are real.
