@@ -67,9 +67,9 @@ All of Victoria from the two bases. Named towns: Mornington, Shepparton, Geelong
 - Link clean URLs from the start (`/about`, not `/about.html`)
 
 ## Design system (set 2026-10-14, follows the hero)
-The hero is modelled on the Primal Pastures hero at James's request, and **the whole site now follows it**. Build every new page in this vocabulary:
+The hero is modelled on the Primal Pastures hero at James's request (minus the announcement bar, removed 2026-10-14), and **the whole site now follows it**. Build every new page in this vocabulary:
 - **Type:** Instrument Serif for all headings, each `h2` with ONE italic phrase in `<em>`. Instrument Sans for body. System monospace (`--font-mono`) for eyebrows, labels, form labels, stat labels, footer heads and the departure board. No condensed/display sans.
-- **Palette:** `--night` indigo (from the painting's sky), `--khaki` (topbar/footer), `--cream`, `--sage`, `--butter` (CTAs, tags, live states). Amber `--accent` is the headlight colour: tiny accents only (eyebrow bullets, focus rings).
+- **Palette:** `--night` indigo (from the painting's sky), `--khaki` (footer, why band), `--cream`, `--sage`, `--butter` (CTAs, tags, live states). Amber `--accent` is the headlight colour: tiny accents only (eyebrow bullets, focus rings).
 - **Bands:** every section after the hero is `.band .band--{night|cream|khaki|sage|butter}`. Bands slide up `--lap` (2.25rem) over the previous one with rounded top corners and a paper-grain overlay. Night bands also get `.stars`. `.section__inner` already pads the bottom by `--lap` so the next band can overlap. **Never give a band a z-index** - DOM order does the stacking, and a z-index hides the next band's rounded corners.
 - **Shapes:** pills (999px) for every button, chip, tag, status tile and radio; `--r-card` 1.5rem for cards/board/form; `--r-field` for inputs. This replaces the house `--radius` rule for this client.
 - **Buttons:** `.btn--butter` (primary, ink border, hard drop shadow on hover), `.btn--ink`, `.btn--outline-ink`, and `.pill-link` for in-card links. Uppercase, tracked.

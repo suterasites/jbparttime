@@ -32,7 +32,7 @@
   --font-body: 'Instrument Sans', system-ui, sans-serif;
   --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
-  --bar-h: 40px;
+  --bar-h: 0px;            /* announcement bar removed 2026-10-14; kept at 0 so the header/hero maths still read */
   --max: 1200px;
   --lap: 2.25rem;          /* how far each band slides up over the one before */
   --r-band: 2.25rem;       /* band top corners */
@@ -165,16 +165,6 @@ h3 { font-size: clamp(1.6rem, 2.4vw, 2.1rem); line-height: 1.05; letter-spacing:
 }
 .pill-link:hover { background: var(--butter); gap: .8rem; }
 .pill-link:active { background: var(--accent); }
-
-/* ---------- announcement bar ---------- */
-.topbar {
-  height: var(--bar-h); display: grid; place-items: center; padding: 0 1rem;
-  background: var(--khaki); color: var(--ink); text-align: center;
-  font-family: var(--font-mono); font-size: .8rem; letter-spacing: .02em;
-  white-space: nowrap; overflow: hidden;
-}
-.topbar b { font-weight: 600; }
-@media (max-width: 479px) { .topbar { font-size: .72rem; } .topbar b { display: none; } }
 
 /* ---------- header ---------- */
 .site-header {
