@@ -66,8 +66,15 @@ All of Victoria from the two bases. Named towns: Mornington, Shepparton, Geelong
 - **Cloudflare Pages project:** not created. **The project name is permanent** - confirm the trading name before creating it
 - Link clean URLs from the start (`/about`, not `/about.html`)
 
-## Homepage hero (2026-10-14)
-Modelled on the Primal Pastures hero at James's request: khaki mono announcement bar, nav left / serif wordmark centred / round icon buttons right, centred Instrument Serif headline with one italic word over the painting, butter-yellow pill CTA, a right-hand column of sticker badges (desktop >=1180px only), and the stats band sliding up over the hero with rounded top corners. **Pills (999px) are allowed in the hero and header only** - the rest of the site keeps `--radius: 6px`. On mobile the CTA is pushed below the truck (`.hero .hero__ctas { margin-top: auto }`) so the button never covers it.
+## Design system (set 2026-10-14, follows the hero)
+The hero is modelled on the Primal Pastures hero at James's request, and **the whole site now follows it**. Build every new page in this vocabulary:
+- **Type:** Instrument Serif for all headings, each `h2` with ONE italic phrase in `<em>`. Instrument Sans for body. System monospace (`--font-mono`) for eyebrows, labels, form labels, stat labels, footer heads and the departure board. No condensed/display sans.
+- **Palette:** `--night` indigo (from the painting's sky), `--khaki` (topbar/footer), `--cream`, `--sage`, `--butter` (CTAs, tags, live states). Amber `--accent` is the headlight colour: tiny accents only (eyebrow bullets, focus rings).
+- **Bands:** every section after the hero is `.band .band--{night|cream|khaki|sage|butter}`. Bands slide up `--lap` (2.25rem) over the previous one with rounded top corners and a paper-grain overlay. Night bands also get `.stars`. `.section__inner` already pads the bottom by `--lap` so the next band can overlap. **Never give a band a z-index** - DOM order does the stacking, and a z-index hides the next band's rounded corners.
+- **Shapes:** pills (999px) for every button, chip, tag, status tile and radio; `--r-card` 1.5rem for cards/board/form; `--r-field` for inputs. This replaces the house `--radius` rule for this client.
+- **Buttons:** `.btn--butter` (primary, ink border, hard drop shadow on hover), `.btn--ink`, `.btn--outline-ink`, and `.pill-link` for in-card links. Uppercase, tracked.
+- **Stickers:** inline SVG stamps (roundels with `textPath`, label boxes) using the `.b-*` classes, slightly rotated, drop-shadowed, wiggle on hover. One or two per section at most. Each `<path id>` must be unique on the page (`bp1`...`bp7` used on the homepage).
+- **Hero specifics:** night painting with a soft dark wash behind the copy; badge column only >=1180px; on mobile the CTA is pushed below the truck (`.hero .hero__ctas { margin-top: auto }`).
 
 ## Hard Rules - Client-Specific
 - **Never present the AI truck image as Jesse's fleet.** No "our fleet" caption, no fleet gallery built from it. Background/texture only. Buyers of a $1m contract judge whether the trucks are real.
