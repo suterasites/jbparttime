@@ -681,8 +681,10 @@ body.nav-open .site-header { background: var(--ink); position: fixed; top: 0; }
 .intro__copy .btn { margin-top: 2rem; }
 .intro__visual { display: grid; place-items: center; padding: 1.5rem 0; }
 .docket--run { transform: rotate(2deg); }
+.docket--run .docket__stamp { bottom: 1.4rem; right: 2.4rem; }
+.docket--run .docket__foot { margin-top: 3rem; }
 .docket--run .docket__rows div { grid-template-columns: 8rem minmax(0, 1fr); }
-@media (max-width: 480px) { .docket--run { transform: rotate(1deg); } .docket--run .docket__stamp { bottom: 1.6rem; } .docket--run .docket__rows div { grid-template-columns: 6.5rem minmax(0, 1fr); } }
+@media (max-width: 480px) { .docket--run { transform: rotate(1deg); } .docket--run .docket__stamp { bottom: 1.4rem; right: 1.2rem; } .docket--run .docket__rows div { grid-template-columns: 6.5rem minmax(0, 1fr); } }
 
 /* the six needs, on the same dark panel as the departure board */
 .needs {
