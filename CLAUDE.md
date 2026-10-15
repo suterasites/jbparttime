@@ -84,6 +84,8 @@ The hero is modelled on the Primal Pastures hero at James's request (minus the a
 - **Never present the AI truck image as Jesse's fleet.** No "our fleet" caption, no fleet gallery built from it. Background/texture only. Buyers of a $1m contract judge whether the trucks are real.
 - **No unconfirmed claims:** no named food-safety certification, no named clients, no staff numbers, no response-time promises until Jesse supplies them.
 - No NSW town pages without confirmation.
+- **Never say the business is run or owned by Jesse Borg** (James, 2026-10-15). No "run by", no full name, no owner bio. The first name in contact lines ("call Jesse on 0468 772 402") and the email address stay.
+- **No street addresses anywhere on the site** (James, 2026-10-15): bases are "Hillside VIC 3037" and "Colac VIC 3250" only, in copy, footer and JSON-LD (`addressLocality` + `postalCode`, no `streetAddress`). The street addresses above are for our records only.
 
 ## Hard Rules - Inherited
 - Do not use em dashes or en dashes anywhere in content, code, or comments
