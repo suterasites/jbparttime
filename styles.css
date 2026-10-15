@@ -481,8 +481,7 @@ body.nav-open .site-header { background: var(--ink); position: fixed; top: 0; }
   font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink);
 }
 .base h3 { font-size: clamp(2.1rem, 4vw, 3rem); font-style: italic; font-weight: 600; letter-spacing: -0.04em; margin: .8rem 0 .4rem; }
-.base__addr { color: var(--ink-soft); font-weight: 500; }
-.base__note { margin-top: .7rem; color: var(--ink-mute); font-size: 1rem; max-width: 30rem; }
+.base__note { margin-top: .2rem; color: var(--ink-mute); font-size: 1rem; max-width: 30rem; }
 
 .towns { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: 2.25rem; }
 .towns li {
