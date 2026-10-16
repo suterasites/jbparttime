@@ -91,6 +91,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.6rem); line-height: 1.15; letter-spacing: -
 }
 .band--cream { background: var(--cream); }
 .band--khaki { background: var(--khaki); }
+.band--white { background: #FFFFFF; }
 .band--sage { background: var(--sage); }
 .band--butter { background: var(--butter); }
 .band--night { background: var(--night); color: var(--on-dark-mute); }
