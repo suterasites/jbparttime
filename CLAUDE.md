@@ -53,7 +53,8 @@ All of Victoria from the two bases. Named towns: Mornington, Shepparton, Geelong
 
 ## Assets
 - `assets/logo/jb-mark.svg` - our JB monogram (amber tile, three road dashes). Also copied to `/favicon.svg`
-- `assets/hero/hero-night-*` - **the homepage hero**, James's painted night scene (truck on a country highway under a crescent moon). `hero-night-source.jpeg` is the original; 1400/2400 webp+jpg are what the page loads
+- `assets/hero/hero-{home,bakery,cold,freight,courier,about,contact,areas}-*` - **one painted hero per page** (James, Gemini, 2026-10-16), all edits of the same night painting so the style matches. `-source.jpeg` is the original; 1400/2400 webp+jpg are what pages load (interior ones are 2400x1340, home 2400x1792). Mapping: home -> index; bakery/cold/freight/courier -> their service page; about -> about; contact -> contact + thank-you; areas -> areas hub, all 7 town pages and 404. On phones the crop is set per page with `style="--hero-x: NN%"` on `.hero__media` (default 88%) so that page's truck stays in frame - re-check it whenever a hero image changes. Every vehicle is plain white and unbranded: these are illustrations, never JB Parttime's fleet
+- `assets/hero/hero-night-*` - the previous homepage hero, no longer referenced (kept as the source of the series)
 - `assets/hero/hero-road-source.jpeg` - the daytime version of the same painting, not used (kept in case a light page wants it)
 - `assets/hero/ai-fleet-collage-source.png` - Jesse's AI truck collage from 2026-10-14. Not used on the page
 - `assets/fleet/` - for REAL fleet photos. None yet; ask after the mockup

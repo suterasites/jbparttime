@@ -365,7 +365,8 @@ body.nav-open .site-header { background: var(--ink); position: fixed; top: 0; }
   filter: saturate(.85) contrast(.95);
 }
 @media (max-width: 767px) {
-  .hero__media img { object-position: 88% 0%; }
+  /* each painting's truck sits in a different spot; pages set --hero-x to keep it in frame */
+  .hero__media img { object-position: var(--hero-x, 88%) 0%; }
 }
 .hero::before {
   /* soft night wash behind the copy so the type reads off a calm field */
