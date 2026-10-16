@@ -280,6 +280,7 @@ body.mega-open::after { opacity: 1; }
 }
 .mega__foot-cta { font-family: var(--font-body); font-weight: 700; letter-spacing: .12em; color: var(--ink); text-decoration: none; display: inline-flex; gap: .5rem; }
 .mega__foot-cta:hover { text-decoration: underline; text-underline-offset: 4px; }
+.mega__foot-links { display: inline-flex; gap: 1.75rem; }
 
 .mega__base { padding-top: .75rem; }
 .mega__base-title {
@@ -485,6 +486,10 @@ body.nav-open .site-header { background: var(--ink); position: fixed; top: 0; }
 .service__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: .5rem; }
 .service__more { font-weight: 600; color: var(--on-dark); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1.5px; text-underline-offset: 4px; transition: color .18s var(--ease); }
 .service__more:hover { color: var(--accent-light); }
+/* services hub: plain cards carry a page link plus a quote link */
+.service__actions--card { margin-top: auto; gap: .9rem 1.25rem; }
+.service__actions--card .service__more { color: var(--ink); font-size: .95rem; }
+.service__actions--card .service__more:hover { color: var(--ink-mute); }
 .service__sticker { width: clamp(110px, 16vw, 170px); justify-self: end; transform: rotate(-8deg); }
 .service__sticker svg { filter: drop-shadow(0 6px 14px rgb(0 0 0 / .45)); }
 @media (min-width: 760px) { .service--feature { grid-template-columns: minmax(0, 1fr) auto; padding-right: clamp(2rem, 6vw, 5rem); } }
