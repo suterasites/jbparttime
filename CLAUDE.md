@@ -40,7 +40,7 @@ All of Victoria from the two bases. Named towns: Mornington, Shepparton, Geelong
 - Plain HTML/CSS/JS, multi-page, no framework. Precompiled CSS, self-hosted woff2, **no Tailwind CDN**
 - Hosted on Cloudflare Pages (not Shopify - this is lead-gen, no products)
 - Quote form via Formspree straight to jesseborg@jbparttime.com
-- Brand: **none exists.** We are designing the logo. Derive `ink/ground/accent` tokens from the logo once it is drawn, per the design system. Do not reuse the Colac Dairies palette.
+- Brand: **Jesse supplied the logo on 2026-10-16** (`assets/logo/jb-logo-source.webp`, raster on white, navy #031C56 + orange #EF9A05, lockup reads "JB PARTTIME PTY LTD"). The site palette (ink #0A1220, accent #F0A23B) already sits close to it, so tokens were left as they are. Do not reuse the Colac Dairies palette.
 
 ## Planned Pages
 - `index.html` - Home
@@ -52,7 +52,7 @@ All of Victoria from the two bases. Named towns: Mornington, Shepparton, Geelong
 - `thank-you.html` (Formspree `_next`, noindex for good), `404.html` (Cloudflare serves it automatically), `robots.txt`, `sitemap.xml` (add every new indexable page)
 
 ## Assets
-- `assets/logo/jb-mark.svg` - our JB monogram (amber tile, three road dashes). Also copied to `/favicon.svg`
+- `assets/logo/` - cut from Jesse's file with a colour-to-alpha pass (never edit the source): `jb-logo` (full lockup, navy, for light grounds: footer), `jb-logo-light` (navy swapped to cream #F6F1E4, for the dark header), `jb-mark` / `jb-mark-light` (the JB-and-road mark alone; docket uses `jb-mark`). png + webp; pages load webp, JSON-LD `logo` uses `jb-logo.png`. Header lockup 44px tall (32px on phones), footer clamp(44px, 7vw, 64px). Favicons: `/favicon.png` (64, light mark on a navy rounded tile) and `/apple-touch-icon.png` (180). Our old amber JB monogram is retired. If Jesse sends a vector (SVG/AI/EPS), re-cut everything from it
 - `assets/hero/hero-{home,bakery,cold,freight,courier,about,contact,areas}-*` - **one painted hero per page** (James, Gemini, 2026-10-16), all edits of the same night painting so the style matches. `-source.jpeg` is the original; 1400/2400 webp+jpg are what pages load (interior ones are 2400x1340, home 2400x1792). Mapping: home -> index; bakery/cold/freight/courier -> their service page; about -> about; contact -> contact + thank-you; areas -> areas hub, all 7 town pages and 404. On phones the crop is set per page with `style="--hero-x: NN%"` on `.hero__media` (default 88%) so that page's truck stays in frame - re-check it whenever a hero image changes. Every vehicle is plain white and unbranded: these are illustrations, never JB Parttime's fleet
 - `assets/hero/hero-night-*` - the previous homepage hero, no longer referenced (kept as the source of the series)
 - `assets/hero/hero-road-source.jpeg` - the daytime version of the same painting, not used (kept in case a light page wants it)

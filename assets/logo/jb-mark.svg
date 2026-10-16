@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="JB Parttime">
-  <rect width="48" height="48" rx="6" fill="#F0A23B"/>
-  <path fill="#0A1220" d="M9 11h13v19.5a8.5 8.5 0 0 1-8.5 8.5H9v-6.2h3.6a3.2 3.2 0 0 0 3.2-3.2V17.2H9z"/>
-  <path fill="#0A1220" fill-rule="evenodd" d="M25 11h8.6a6.6 6.6 0 0 1 4.3 11.6A7.4 7.4 0 0 1 33.9 39H25zm6.2 5.6v4.6h2a2.3 2.3 0 0 0 0-4.6zm0 9.6v7.2h2.5a3.6 3.6 0 0 0 0-7.2z"/>
-  <rect x="9" y="42" width="7" height="2" rx="1" fill="#0A1220" opacity=".55"/>
-  <rect x="20.5" y="42" width="7" height="2" rx="1" fill="#0A1220" opacity=".55"/>
-  <rect x="32" y="42" width="7" height="2" rx="1" fill="#0A1220" opacity=".55"/>
-</svg>
