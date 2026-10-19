@@ -67,7 +67,7 @@ All of Victoria from **three bases: Hillside VIC 3037, Colac VIC 3250 and Albury
 - **Git remote:** `https://github.com/suterasites/jbparttime.git` (created by James 2026-10-15), branch `main`
 - **Cloudflare Pages project:** `jbparttime` (`https://jbparttime.pages.dev`, created by James 2026-10-15), auto-deploys on push to `main`. Custom domain jbparttime.com.au, live 2026-10-20.
 - **Indexable since 2026-10-20:** noindex removed from every page except thank-you and 404 (which stay noindex for good); robots.txt allows all and names the sitemap.
-- **Formspree:** all 14 forms still post to the `FORM_ID` placeholder at launch. Swap in the real ID on every page (ledger `jb-formspree-form-id`) and test from the live site.
+- **Formspree:** form `mzedqewo` (James, 2026-10-20) on all 14 forms. **The same form serves Colac Dairies**, so the `_subject` (which names jbparttime.com.au) is what tells the two apart in the inbox and in the lead poller - never drop the domain from a subject.
 - Registered in: `Apps/sutera-seo/clients.yaml`, the Formspree poller domain map, `CRM/operations/lead-targets.yaml`, `CRM/operations/geo/client-bases.yaml`.
 - Link clean URLs from the start (`/about`, not `/about.html`)
 
