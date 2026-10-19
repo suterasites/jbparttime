@@ -7,7 +7,8 @@
 **Phone:** 0468 772 402
 **Email (quote form destination):** jesseborg@jbparttime.com
 **Bases:** 26 Boronia Drive, Hillside VIC 3037 and 5 Dennis Street, Colac VIC 3250
-**Domain:** jbparttime.com - registered, runs Google Workspace mail, no website yet. **Never touch the MX records** when DNS is pointed at Pages.
+**Domain (website):** **jbparttime.com.au** - LIVE 2026-10-20. Cloudflare zone; the apex is canonical and www 301s to it (zone Redirect Rule). Every canonical, og:url, JSON-LD url, sitemap loc and Formspree `_next` uses `https://jbparttime.com.au`.
+**Domain (mail only):** jbparttime.com - a separate domain on Google Domains NS carrying Jesse's Google Workspace mail. No website on it. **Never repoint it or touch its MX records.** Keep jesseborg@jbparttime.com as the email everywhere.
 **Hours:** Mon-Sat 9am-5pm (label as office hours - the deliveries themselves run overnight)
 **Facebook:** page exists (Melbourne mail and delivery company); link it unless Jesse objects
 **Positioning:** Victoria-wide food and freight carrier since 2008, refrigerated fleet, overnight bakery runs.
@@ -64,7 +65,10 @@ All of Victoria from **three bases: Hillside VIC 3037, Colac VIC 3250 and Albury
 
 ## Deployment
 - **Git remote:** `https://github.com/suterasites/jbparttime.git` (created by James 2026-10-15), branch `main`
-- **Cloudflare Pages project:** live at `https://jbparttime.pages.dev` (created by James 2026-10-15), auto-deploys on push to `main`. Domain jbparttime.com not pointed yet; Formspree `_next` already uses the domain, so test submissions only land on the thank-you page after DNS
+- **Cloudflare Pages project:** `jbparttime` (`https://jbparttime.pages.dev`, created by James 2026-10-15), auto-deploys on push to `main`. Custom domain jbparttime.com.au, live 2026-10-20.
+- **Indexable since 2026-10-20:** noindex removed from every page except thank-you and 404 (which stay noindex for good); robots.txt allows all and names the sitemap.
+- **Formspree:** all 14 forms still post to the `FORM_ID` placeholder at launch. Swap in the real ID on every page (ledger `jb-formspree-form-id`) and test from the live site.
+- Registered in: `Apps/sutera-seo/clients.yaml`, the Formspree poller domain map, `CRM/operations/lead-targets.yaml`, `CRM/operations/geo/client-bases.yaml`.
 - Link clean URLs from the start (`/about`, not `/about.html`)
 
 ## Design system (set 2026-10-14, follows the hero)
