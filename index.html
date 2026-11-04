@@ -83,7 +83,6 @@
   }
   </script>
 
-  <!-- GA4: add the property's gtag snippet here at launch -->
   <!-- Sutera lead events (GA4) -->
   <script>/* SUTERA_LEAD_EVENTS */
   (function(){
@@ -100,6 +99,14 @@
       if (isLead) ev('generate_lead', { form_id: f.id || f.getAttribute('name') || 'contact' });
     }, true);
   })();
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6PKXP7RH3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P6PKXP7RH3');
   </script>
 </head>
 <body>
